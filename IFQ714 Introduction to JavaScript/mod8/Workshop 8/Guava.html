@@ -1,0 +1,59 @@
+<html>
+    <script src="Guava.js"></script>
+    <body>
+
+        <!-- Header of page. -->
+        <h1>Guava Computer Store - Employee and Sale Data</h1>
+        <hr/>
+
+        <!-- Row for selecting employee. -->
+        <div>
+            <label for="staffId">Staff ID:</label>
+
+            <!-- Add the option elements for your emlpoyees inside this element. -->
+            <select name="staffId" id="staffIdSelect">
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        <!-- When the user changes the option on the drop down, display the data on the employee and their sales (if any) inside this element. If the default value of all is selected, show all of them.-->
+        <div id="dataDiv">
+            Waiting for employee and sales data...
+        </div>
+        <hr/>
+
+        <!-- This area should let the user create a new employee. -->
+        <div>
+
+            <h2>Add a new employee</h2>
+            <!-- A form element is typically used for entering user data on Web pages. -->
+            <form id="employeeForm">
+
+                <!-- The table element is being used here for positioning the elements in a grid. -->
+                <table>
+                    <tr>
+                        <td><label for="id">Staff ID</label></td>
+                        <td><input type="text" id="staffFormID" name="id"/></td>
+                        <td><label for="firstName">First name</label></td>
+                        <td><input type="text" id="staffFormFirstName" name="firstName"/></td>
+                        <td><label for="lastName">Last name</label></td>
+                        <td><input type="text" id="staffFormLastName" name="lastName"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td><input type="text" id="staffFormGender" name="gender"/></td>
+                        <td><label for="age">Age</label></td>
+                        <td><input type="text" id="staffFormAge" name="age"/></td>
+                        <td><label for="position">Position</label></td>
+                        <td><input type="text" id="staffFormPosition" name="position"/></td>
+                    </tr>
+                </table>
+
+                <br/>
+                <!-- When this button is clicked, the submit event for the form will be fired. -->
+                <input type="submit" value="Add employee"/>
+                <button type="button">Clear form</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <script src="DOM_example.js"></script>
+    <body>
+        <div style="min-width:640px; max-width:640px; display:flex; border:1px solid black;">
+            <div class="sideOne" style="flex:1">
+                <label name="colour">Side one colour:</label>
+                <select id="colourSelect" name="colour">
+                    <option value="inherit">None</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div style="flex:1">
+                <button id="addElementButton">Add element</button>
+                <button id="removeElementButton">Remove element</button>
+            </div>
+        </div>
+        <div style="min-width:640px; max-width:640px; display:flex; border:1px solid black;">
+            <div id="sideOne" class="sideOne" style="flex:1">
+                <h3>Side one</h3>
+                <p>Paragraph one</p>
+                <p>Paragraph two</p>
+                <p>Paragraph three</p>
+                <p>Paragraph four</p>
+            </div>
+            <div id="sideTwo" style="flex:1">
+                <h3>Side two</h3>
+            </div>
+        </div>
+        <div style="min-width:640px; max-width:640px; border:1px solid black;"></div>
+            <button id="openWindowButton">Open window</button>
+            <button id="moveWindowButton">Move window</button>
+            <button id="closeWindowButton">Close window</button>
+            <button id="informationButton">Show browser information</button>
+            <button id="backButton">Back</button>
+            <button id="forwardButton">Forward</button>
+        </div>
+    </body>
+</html>
